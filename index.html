@@ -1,3 +1,20 @@
+# Luxusní web – Pedikúra Erika Svobodová
+
+Níže máš kompletní profesionální HTML kód webu inspirovaný návrhem.
+
+## Postup vložení do GitHubu
+
+1. Otevři soubor `index.html`
+2. Klikni na tužku ✏️
+3. Označ vše (`CTRL+A`)
+4. Smaž
+5. Vlož celý tento nový kód
+6. Dole klikni na `Commit changes`
+7. Počkej cca 1 minutu a obnov web
+
+---
+
+```html
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -6,200 +23,363 @@
 <title>Pedikúra Erika Svobodová</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
 body{
-    font-family:'Montserrat',sans-serif;
-    background:#fffaf9;
-    color:#444;
-    line-height:1.6;
+font-family:'Montserrat',sans-serif;
+background:#fffaf8;
+color:#444;
+line-height:1.7;
+overflow-x:hidden;
 }
 
 header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:25px 8%;
-    background:white;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 2px 10px rgba(0,0,0,0.04);
+position:fixed;
+width:100%;
+top:0;
+left:0;
+z-index:1000;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(255,255,255,0.92);
+backdrop-filter:blur(10px);
+box-shadow:0 2px 20px rgba(0,0,0,0.04);
 }
 
 .logo{
-    font-family:'Cormorant Garamond',serif;
-    font-size:32px;
-    color:#d89aa0;
-    font-weight:600;
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+height:70px;
+}
+
+.logo-text{
+font-family:'Cormorant Garamond',serif;
+font-size:28px;
+font-weight:600;
+color:#2d2d2d;
+}
+
+nav{
+display:flex;
+gap:30px;
 }
 
 nav a{
-    text-decoration:none;
-    color:#555;
-    margin-left:30px;
-    font-size:15px;
-    transition:0.3s;
+text-decoration:none;
+color:#555;
+font-size:15px;
+font-weight:500;
+transition:0.3s;
 }
 
 nav a:hover{
-    color:#d89aa0;
+color:#d6949b;
 }
 
 .hero{
-    min-height:90vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:60px 10%;
-    background:
-    linear-gradient(rgba(255,250,249,0.75),rgba(255,250,249,0.75)),
-    url('https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=1974&auto=format&fit=crop');
-    background-size:cover;
-    background-position:center;
+min-height:100vh;
+display:flex;
+align-items:center;
+padding:140px 10% 80px;
+background:
+linear-gradient(rgba(255,250,248,0.85),rgba(255,250,248,0.85)),
+url('https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=1974&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
 }
 
 .hero-content{
-    max-width:700px;
+max-width:650px;
+animation:fadeUp 1s ease;
+}
+
+.hero-sub{
+font-family:'Cormorant Garamond',serif;
+font-size:48px;
+color:#d6949b;
+margin-bottom:10px;
 }
 
 .hero h1{
-    font-family:'Cormorant Garamond',serif;
-    font-size:76px;
-    color:#2d2d2d;
-    margin-bottom:20px;
+font-family:'Cormorant Garamond',serif;
+font-size:78px;
+line-height:1;
+margin-bottom:30px;
+font-weight:600;
+color:#2d2d2d;
 }
 
 .hero p{
-    font-size:20px;
-    margin-bottom:35px;
+font-size:20px;
+margin-bottom:40px;
+max-width:550px;
 }
 
 .btn{
-    display:inline-block;
-    padding:16px 38px;
-    background:#d89aa0;
-    color:white;
-    text-decoration:none;
-    border-radius:50px;
-    transition:0.3s;
-    font-weight:500;
+display:inline-block;
+padding:18px 40px;
+background:#d6949b;
+color:white;
+text-decoration:none;
+border-radius:60px;
+font-weight:600;
+transition:0.3s;
+box-shadow:0 10px 25px rgba(214,148,155,0.3);
 }
 
 .btn:hover{
-    background:#c7848b;
+transform:translateY(-4px);
+background:#cb7f87;
 }
 
 .section{
-    padding:100px 10%;
+padding:110px 10%;
 }
 
 .section-title{
-    text-align:center;
-    margin-bottom:60px;
+text-align:center;
+margin-bottom:70px;
+}
+
+.section-sub{
+font-family:'Cormorant Garamond',serif;
+font-size:40px;
+color:#d6949b;
 }
 
 .section-title h2{
-    font-family:'Cormorant Garamond',serif;
-    font-size:54px;
-    color:#2d2d2d;
+font-family:'Cormorant Garamond',serif;
+font-size:60px;
+color:#2d2d2d;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:-70px;
+position:relative;
+z-index:5;
+}
+
+.feature-box{
+background:white;
+padding:40px 30px;
+text-align:center;
+border-radius:30px;
+box-shadow:0 10px 35px rgba(0,0,0,0.05);
+transition:0.3s;
+}
+
+.feature-box:hover{
+transform:translateY(-8px);
+}
+
+.feature-box h3{
+margin:20px 0 10px;
+color:#d6949b;
+font-size:22px;
 }
 
 .services{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:35px;
 }
 
-.card{
-    background:white;
-    padding:35px;
-    border-radius:25px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.05);
-    transition:0.3s;
+.service-card{
+background:white;
+border-radius:30px;
+overflow:hidden;
+box-shadow:0 10px 35px rgba(0,0,0,0.05);
+transition:0.3s;
 }
 
-.card:hover{
-    transform:translateY(-8px);
+.service-card:hover{
+transform:translateY(-10px);
 }
 
-.card h3{
-    margin-bottom:15px;
-    color:#d89aa0;
+.service-card img{
+width:100%;
+height:240px;
+object-fit:cover;
+}
+
+.service-content{
+padding:30px;
+}
+
+.service-content h3{
+font-size:26px;
+margin-bottom:15px;
+color:#d6949b;
+font-family:'Cormorant Garamond',serif;
 }
 
 .price{
-    margin-top:15px;
-    font-weight:600;
+margin-top:20px;
+font-size:20px;
+font-weight:700;
 }
 
 .booking{
-    background:#fceff1;
-    text-align:center;
-    border-radius:30px;
-    padding:70px 40px;
+background:#fceef0;
+border-radius:40px;
+padding:90px 50px;
+text-align:center;
+position:relative;
+overflow:hidden;
 }
 
-.contact{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
+.booking h2{
+font-size:64px;
+font-family:'Cormorant Garamond',serif;
+margin-bottom:20px;
+}
+
+.booking p{
+font-size:20px;
+max-width:700px;
+margin:auto;
+margin-bottom:35px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.gallery img{
+width:100%;
+height:320px;
+object-fit:cover;
+border-radius:30px;
+transition:0.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.03);
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
 }
 
 .contact-box{
-    background:white;
-    padding:40px;
-    border-radius:25px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+background:white;
+padding:50px;
+border-radius:35px;
+box-shadow:0 10px 35px rgba(0,0,0,0.05);
+}
+
+.contact-box h3{
+font-family:'Cormorant Garamond',serif;
+font-size:40px;
+margin-bottom:25px;
+color:#d6949b;
 }
 
 .contact-item{
-    margin-bottom:20px;
-    padding-bottom:15px;
-    border-bottom:1px solid #eee;
+padding:18px 0;
+border-bottom:1px solid #eee;
+font-size:18px;
 }
 
 footer{
-    text-align:center;
-    padding:40px;
-    background:white;
-    margin-top:50px;
-    color:#888;
+background:white;
+padding:40px;
+text-align:center;
+color:#888;
+font-size:14px;
 }
 
-@media(max-width:900px){
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px);
+}
 
-    header{
-        flex-direction:column;
-        gap:20px;
-    }
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
 
-    nav{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-    }
+@media(max-width:950px){
 
-    nav a{
-        margin:10px;
-    }
+header{
+flex-direction:column;
+gap:20px;
+}
 
-    .hero h1{
-        font-size:52px;
-    }
+nav{
+flex-wrap:wrap;
+justify-content:center;
+}
 
-    .contact{
-        grid-template-columns:1fr;
-    }
+.hero{
+text-align:center;
+justify-content:center;
+}
+
+.hero h1{
+font-size:58px;
+}
+
+.hero-sub{
+font-size:34px;
+}
+
+.section-title h2{
+font-size:46px;
+}
+
+.booking h2{
+font-size:46px;
+}
+
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:600px){
+
+.hero h1{
+font-size:46px;
+}
+
+.hero-sub{
+font-size:28px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.section{
+padding:90px 7%;
+}
 
 }
 
@@ -211,16 +391,18 @@ footer{
 <header>
 
 <div class="logo">
+<img src="https://i.imgur.com/YOURLOGO.png" alt="Logo">
+<div class="logo-text">
 Pedikúra Erika Svobodová
+</div>
 </div>
 
 <nav>
 <a href="#">Úvod</a>
-<a href="#">Služby</a>
-<a href="#">Ceník</a>
-<a href="#">Galerie</a>
-<a href="#">Objednání</a>
-<a href="#">Kontakt</a>
+<a href="#sluzby">Služby</a>
+<a href="#galerie">Galerie</a>
+<a href="#objednani">Objednání</a>
+<a href="#kontakt">Kontakt</a>
 </nav>
 
 </header>
@@ -229,56 +411,102 @@ Pedikúra Erika Svobodová
 
 <div class="hero-content">
 
-<h1>Pedikúra Erika Svobodová</h1>
+<div class="hero-sub">
+Pedikúra
+</div>
+
+<h1>
+Erika Svobodová
+</h1>
 
 <p>
 Dopřejte svým nohám profesionální péči,
-relaxaci a krásu v elegantním prostředí.
+relaxaci a krásu v elegantním a příjemném prostředí.
 </p>
 
-<a href="#" class="btn">
-Objednat termín
+<a href="#objednani" class="btn">
+OBJEDNAT TERMÍN
 </a>
 
 </div>
 
 </section>
 
-<section class="section">
+<section class="section" style="padding-top:0;">
+
+<div class="features">
+
+<div class="feature-box">
+<h3>PÉČE</h3>
+<p>
+Profesionální a jemná péče o vaše nohy.
+</p>
+</div>
+
+<div class="feature-box">
+<h3>KVALITA</h3>
+<p>
+Kvalitní produkty a individuální přístup.
+</p>
+</div>
+
+<div class="feature-box">
+<h3>RELAX</h3>
+<p>
+Příjemné prostředí a chvíle odpočinku.
+</p>
+</div>
+
+<div class="feature-box">
+<h3>KRÁSA</h3>
+<p>
+Zdravé a krásné nohy každý den.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="sluzby">
 
 <div class="section-title">
+<div class="section-sub">Moje</div>
 <h2>Služby</h2>
 </div>
 
 <div class="services">
 
-<div class="card">
+<div class="service-card">
+<img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=1200&auto=format&fit=crop">
+<div class="service-content">
 <h3>Klasická pedikúra</h3>
 <p>
-Kompletní péče o chodidla a nehty.
+Kompletní péče o chodidla, nehty a pokožku.
 </p>
-<div class="price">
-650 Kč
+<div class="price">650 Kč</div>
 </div>
 </div>
 
-<div class="card">
+<div class="service-card">
+<img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1200&auto=format&fit=crop">
+<div class="service-content">
 <h3>Mokrá pedikúra</h3>
 <p>
-Relaxační ošetření s koupelí.
+Relaxační péče s koupelí a regenerací.
 </p>
-<div class="price">
-750 Kč
+<div class="price">750 Kč</div>
 </div>
 </div>
 
-<div class="card">
+<div class="service-card">
+<img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=1200&auto=format&fit=crop">
+<div class="service-content">
 <h3>Gel lak</h3>
 <p>
-Dlouhotrvající úprava nehtů.
+Elegantní úprava nehtů s dlouhou výdrží.
 </p>
-<div class="price">
-350 Kč
+<div class="price">350 Kč</div>
 </div>
 </div>
 
@@ -286,71 +514,102 @@ Dlouhotrvající úprava nehtů.
 
 </section>
 
-<section class="section">
+<section class="section" id="objednani">
 
 <div class="booking">
 
-<div class="section-title">
-<h2>Online objednání</h2>
+<div class="section-sub">
+Rezervujte si svůj
 </div>
 
-<p style="margin-bottom:30px;">
-Rezervační systém bude propojen s kalendářem.
+<h2>
+Termín online
+</h2>
+
+<p>
+Objednávkový kalendář bude propojen s online rezervacemi.
+Klientky si budou moci jednoduše rezervovat termín.
 </p>
 
-<a href="#" class="btn">
-Rezervovat termín
+<a href="#kontakt" class="btn">
+OBJEDNAT TERMÍN
 </a>
 
 </div>
 
 </section>
 
-<section class="section">
+<section class="section" id="galerie">
 
 <div class="section-title">
-<h2>Kontakt</h2>
+<div class="section-sub">Moje</div>
+<h2>Galerie</h2>
 </div>
 
-<div class="contact">
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1200&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=1200&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=1200&auto=format&fit=crop">
+
+</div>
+
+</section>
+
+<section class="section" id="kontakt">
+
+<div class="section-title">
+<div class="section-sub">Kontakt</div>
+<h2>Ozvěte se mi</h2>
+</div>
+
+<div class="contact-grid">
 
 <div class="contact-box">
 
+<h3>Kontaktní údaje</h3>
+
 <div class="contact-item">
-Telefon
+📞 Telefon
 </div>
 
 <div class="contact-item">
-E-mail
+✉️ E-mail
 </div>
 
 <div class="contact-item">
-Adresa
+📍 Adresa
 </div>
 
 <div class="contact-item">
-Instagram
+📷 Instagram
 </div>
 
 <div class="contact-item">
-Facebook
+👍 Facebook
 </div>
 
 </div>
 
 <div class="contact-box">
 
-<h3 style="margin-bottom:20px;color:#d89aa0;">
-Otevírací doba
-</h3>
+<h3>Otevírací doba</h3>
 
-<p>
+<div class="contact-item">
 Pondělí – Pátek
-</p>
+</div>
 
-<p>
+<div class="contact-item">
 08:00 – 18:00
-</p>
+</div>
+
+<div class="contact-item">
+Sobota – dle objednávek
+</div>
+
+<div class="contact-item">
+Neděle – zavřeno
+</div>
 
 </div>
 
@@ -359,10 +618,23 @@ Pondělí – Pátek
 </section>
 
 <footer>
-
-© 2026 Pedikúra Erika Svobodová
-
+© 2026 Pedikúra Erika Svobodová • Všechna práva vyhrazena
 </footer>
 
 </body>
 </html>
+```
+
+---
+
+POZNÁMKA:
+
+Až budeš chtít:
+
+* skutečné logo,
+* vlastní fotky,
+* online kalendář,
+* formulář,
+* nebo vlastní doménu,
+
+můžeme web dále profesionálně rozšířit.
