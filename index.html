@@ -1,20 +1,3 @@
-# Luxusní web – Pedikúra Erika Svobodová
-
-Níže máš kompletní profesionální HTML kód webu inspirovaný návrhem.
-
-## Postup vložení do GitHubu
-
-1. Otevři soubor `index.html`
-2. Klikni na tužku ✏️
-3. Označ vše (`CTRL+A`)
-4. Smaž
-5. Vlož celý tento nový kód
-6. Dole klikni na `Commit changes`
-7. Počkej cca 1 minutu a obnov web
-
----
-
-```html
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -24,6 +7,7 @@ Níže máš kompletní profesionální HTML kód webu inspirovaný návrhem.
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Parisienne&display=swap" rel="stylesheet">
 
 <style>
@@ -37,7 +21,7 @@ scroll-behavior:smooth;
 
 body{
 font-family:'Montserrat',sans-serif;
-background:#fff;
+background:#ffffff;
 color:#444;
 overflow-x:hidden;
 }
@@ -47,23 +31,23 @@ position:fixed;
 top:0;
 left:0;
 width:100%;
-padding:20px 7%;
+padding:16px 7%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(255,250,249,0.96);
-backdrop-filter:blur(10px);
+background:#f6dede;
 z-index:1000;
+box-shadow:0 4px 20px rgba(0,0,0,0.04);
 }
 
 .logo{
 display:flex;
 align-items:center;
-gap:18px;
 }
 
 .logo img{
-height:82px;
+height:140px;
+width:auto;
 object-fit:contain;
 }
 
@@ -79,18 +63,29 @@ font-size:13px;
 text-transform:uppercase;
 letter-spacing:1px;
 color:#444;
-font-weight:500;
+font-weight:600;
+transition:0.3s;
 }
 
-.hero-btn{
-background:#d88e97;
+nav a:hover{
+color:#d57c87;
+}
+
+.top-btn{
+background:#d57c87;
 color:white;
-padding:14px 24px;
+padding:15px 28px;
 border-radius:50px;
-font-size:12px;
-font-weight:600;
 text-decoration:none;
-margin-left:10px;
+font-size:13px;
+font-weight:600;
+margin-left:15px;
+transition:0.3s;
+}
+
+.top-btn:hover{
+background:#c56a76;
+transform:translateY(-2px);
 }
 
 .hero{
@@ -98,34 +93,34 @@ min-height:100vh;
 display:grid;
 grid-template-columns:1fr 1fr;
 align-items:center;
-padding:140px 7% 80px;
-background:#fdf7f5;
+padding:180px 7% 90px;
+background:#fcf7f5;
 }
 
 .hero-left{
-padding-right:50px;
+padding-right:60px;
 }
 
 .script{
 font-family:'Parisienne',cursive;
-font-size:82px;
-color:#df9ca3;
+font-size:88px;
+color:#df8f99;
 line-height:1;
 }
 
 .hero h1{
 font-family:'Cormorant Garamond',serif;
-font-size:82px;
+font-size:92px;
 font-weight:500;
 line-height:0.95;
 margin-top:10px;
-color:#2c2c2c;
+color:#2d2d2d;
 }
 
 .divider{
-width:170px;
+width:220px;
 height:1px;
-background:#e7b7bc;
+background:#e7b0b7;
 margin:35px 0;
 position:relative;
 }
@@ -134,59 +129,72 @@ position:relative;
 content:'♥';
 position:absolute;
 left:50%;
-transform:translateX(-50%);
 top:-11px;
-background:#fdf7f5;
+transform:translateX(-50%);
+background:#fcf7f5;
 padding:0 12px;
-font-size:14px;
-color:#df9ca3;
+color:#df8f99;
+font-size:15px;
 }
 
 .hero p{
-font-size:22px;
+font-size:24px;
 line-height:1.8;
 max-width:540px;
-margin-bottom:40px;
+margin-bottom:45px;
 color:#666;
 }
 
-.btn{
+.main-btn{
 display:inline-block;
-background:#d88e97;
+background:#d57c87;
 color:white;
-padding:18px 34px;
+padding:20px 38px;
 border-radius:60px;
 text-decoration:none;
 font-weight:600;
 font-size:14px;
 letter-spacing:0.5px;
+transition:0.3s;
+}
+
+.main-btn:hover{
+background:#c56a76;
+transform:translateY(-3px);
 }
 
 .hero-right img{
 width:100%;
-border-radius:0 0 0 120px;
+border-radius:0 0 0 140px;
 object-fit:cover;
+box-shadow:0 15px 35px rgba(0,0,0,0.08);
 }
 
 .features{
 display:grid;
 grid-template-columns:repeat(4,1fr);
-padding:40px 7%;
-background:#fff;
+padding:42px 7%;
+background:white;
 text-align:center;
-gap:30px;
+gap:20px;
+border-top:1px solid #f1e4e4;
+border-bottom:1px solid #f1e4e4;
+}
+
+.feature{
+padding:10px;
 }
 
 .feature h3{
-color:#d88e97;
 font-family:'Cormorant Garamond',serif;
-font-size:30px;
+font-size:32px;
+color:#d57c87;
 margin-bottom:8px;
 }
 
 .feature p{
-color:#666;
 font-size:15px;
+color:#666;
 }
 
 .section{
@@ -199,35 +207,40 @@ text-align:center;
 
 .section-script{
 font-family:'Parisienne',cursive;
-font-size:54px;
-color:#df9ca3;
+font-size:58px;
+color:#df8f99;
 }
 
 .section-title{
 font-family:'Cormorant Garamond',serif;
-font-size:70px;
+font-size:76px;
 font-weight:500;
-margin-top:-10px;
+margin-top:-12px;
 color:#2d2d2d;
 }
 
 .services{
 display:grid;
 grid-template-columns:repeat(4,1fr);
-gap:25px;
-margin-top:60px;
+gap:28px;
+margin-top:65px;
 }
 
 .card{
 background:white;
-border-radius:24px;
+border-radius:28px;
 overflow:hidden;
-box-shadow:0 10px 35px rgba(0,0,0,0.05);
+box-shadow:0 12px 35px rgba(0,0,0,0.05);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
 }
 
 .card img{
 width:100%;
-height:240px;
+height:250px;
 object-fit:cover;
 }
 
@@ -238,47 +251,56 @@ text-align:center;
 
 .card h3{
 font-family:'Cormorant Garamond',serif;
-font-size:32px;
+font-size:34px;
 margin-bottom:15px;
 color:#2c2c2c;
 }
 
 .card p{
 font-size:15px;
-line-height:1.7;
+line-height:1.8;
 color:#666;
 }
 
 .more{
 margin-top:18px;
-color:#df9ca3;
+color:#df8f99;
 font-weight:600;
 font-size:14px;
+}
+
+.center-btn{
+text-align:center;
+margin-top:50px;
 }
 
 .booking-grid{
 display:grid;
 grid-template-columns:1fr 1fr 1fr;
 margin-top:80px;
-background:#fdf4f2;
+background:#fdf2f1;
+border-radius:40px;
+overflow:hidden;
 }
 
 .booking-box{
-padding:70px 50px;
+padding:70px 55px;
 }
 
 .booking-box h2{
 font-family:'Cormorant Garamond',serif;
-font-size:56px;
+font-size:62px;
 font-weight:500;
 line-height:1;
-margin:15px 0 25px;
+margin:18px 0 28px;
+color:#2d2d2d;
 }
 
 .booking-box p{
-line-height:1.8;
-margin-bottom:35px;
+line-height:1.9;
+margin-bottom:40px;
 color:#666;
+font-size:17px;
 }
 
 .booking-image img{
@@ -289,27 +311,48 @@ object-fit:cover;
 
 .contact-title{
 font-family:'Cormorant Garamond',serif;
-font-size:58px;
+font-size:60px;
 margin-bottom:35px;
 font-weight:500;
+color:#2d2d2d;
 }
 
 .contact-item{
-padding:16px 0;
+padding:18px 0;
 border-bottom:1px solid #eadada;
 color:#777;
 font-size:16px;
 }
 
 footer{
-padding:35px;
-background:#f8e7e6;
+padding:40px;
+background:#f6dede;
 text-align:center;
 font-size:13px;
-color:#777;
+color:#666;
 }
 
-@media(max-width:1100px){
+.footer-logo{
+margin-bottom:20px;
+}
+
+.footer-logo img{
+height:90px;
+}
+
+@media(max-width:1200px){
+
+.services{
+grid-template-columns:1fr 1fr;
+}
+
+.features{
+grid-template-columns:1fr 1fr;
+}
+
+.booking-grid{
+grid-template-columns:1fr;
+}
 
 .hero{
 grid-template-columns:1fr;
@@ -325,12 +368,6 @@ margin-bottom:60px;
 margin:35px auto;
 }
 
-.features,
-.services,
-.booking-grid{
-grid-template-columns:1fr 1fr;
-}
-
 }
 
 @media(max-width:700px){
@@ -338,15 +375,25 @@ grid-template-columns:1fr 1fr;
 header{
 flex-direction:column;
 gap:20px;
+padding:20px;
 }
 
 nav{
 flex-wrap:wrap;
 justify-content:center;
+gap:18px;
+}
+
+.logo img{
+height:100px;
+}
+
+.hero{
+padding-top:240px;
 }
 
 .hero h1{
-font-size:58px;
+font-size:60px;
 }
 
 .script{
@@ -354,12 +401,14 @@ font-size:58px;
 }
 
 .section-title{
-font-size:52px;
+font-size:56px;
 }
 
-.features,
-.services,
-.booking-grid{
+.services{
+grid-template-columns:1fr;
+}
+
+.features{
 grid-template-columns:1fr;
 }
 
@@ -379,11 +428,15 @@ grid-template-columns:1fr;
 <nav>
 <a href="#">Úvod</a>
 <a href="#sluzby">Služby</a>
-<a href="#cenik">Ceník</a>
+<a href="#">Ceník</a>
 <a href="#galerie">Galerie</a>
 <a href="#objednani">Objednat termín</a>
 <a href="#kontakt">Kontakt</a>
-<a class="hero-btn" href="#objednani">OBJEDNAT TERMÍN</a>
+
+<a class="top-btn" href="#objednani">
+OBJEDNAT TERMÍN
+</a>
+
 </nav>
 
 </header>
@@ -391,18 +444,32 @@ grid-template-columns:1fr;
 <section class="hero">
 
 <div class="hero-left">
-<div class="script">Pedikura</div>
-<h1>Erika Svobodová</h1>
+
+<div class="script">
+Pedikúra
+</div>
+
+<h1>
+Erika Svobodová
+</h1>
+
 <div class="divider"></div>
+
 <p>
 Dopřejte svým nohám péči,
 kterou si zaslouží.
 </p>
-<a href="#objednani" class="btn">OBJEDNAT TERMÍN</a>
+
+<a href="#objednani" class="main-btn">
+OBJEDNAT TERMÍN
+</a>
+
 </div>
 
 <div class="hero-right">
-<img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=1600&auto=format&fit=crop">
+
+<img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=1800&auto=format&fit=crop">
+
 </div>
 
 </section>
@@ -425,8 +492,8 @@ kterou si zaslouží.
 </div>
 
 <div class="feature">
-<h3>KRÁSA</h3>
-<p>a zdravé nohy</p>
+<h3>ZDRAVÉ</h3>
+<p>a krásné nohy</p>
 </div>
 
 </section>
@@ -434,47 +501,110 @@ kterou si zaslouží.
 <section class="section" id="sluzby">
 
 <div class="center">
-<div class="section-script">Moje</div>
-<div class="section-title">SLUŽBY</div>
+
+<div class="section-script">
+Moje
+</div>
+
+<div class="section-title">
+SLUŽBY
+</div>
+
 </div>
 
 <div class="services">
 
 <div class="card">
+
 <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=1200&auto=format&fit=crop">
+
 <div class="card-content">
+
 <h3>Klasická pedikúra</h3>
-<p>Kompletní péče o nohy, úprava nehtů a závěrečná péče.</p>
-<div class="more">Více informací →</div>
+
+<p>
+Kompletní péče o nohy,
+úprava nehtů a závěrečná péče.
+</p>
+
+<div class="more">
+Více informací →
 </div>
+
+</div>
+
 </div>
 
 <div class="card">
+
 <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1200&auto=format&fit=crop">
+
 <div class="card-content">
+
 <h3>Mokrá pedikúra</h3>
-<p>Změkčení kůže, odstranění mozolů a relaxační péče.</p>
-<div class="more">Více informací →</div>
+
+<p>
+Změkčení kůže,
+odstranění mozolů a relaxační péče.
+</p>
+
+<div class="more">
+Více informací →
 </div>
+
+</div>
+
 </div>
 
 <div class="card">
+
 <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=1200&auto=format&fit=crop">
+
 <div class="card-content">
+
 <h3>Gel lak</h3>
-<p>Aplikace gel laku s dlouhotrvajícím efektem.</p>
-<div class="more">Více informací →</div>
+
+<p>
+Aplikace gel laku
+s dlouhotrvajícím efektem.
+</p>
+
+<div class="more">
+Více informací →
 </div>
+
+</div>
+
 </div>
 
 <div class="card">
+
 <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=1200&auto=format&fit=crop">
+
 <div class="card-content">
+
 <h3>Speciální péče</h3>
-<p>Regenerační a výživné procedury pro krásné nohy.</p>
-<div class="more">Více informací →</div>
+
+<p>
+Regenerační a výživné procedury
+pro krásné nohy.
+</p>
+
+<div class="more">
+Více informací →
 </div>
+
 </div>
+
+</div>
+
+</div>
+
+<div class="center-btn">
+
+<a href="#" class="main-btn">
+ZOBRAZIT VŠECHNY SLUŽBY
+</a>
 
 </div>
 
@@ -485,26 +615,59 @@ kterou si zaslouží.
 <div class="booking-grid">
 
 <div class="booking-box">
-<div class="section-script">Rezervujte si svůj</div>
-<h2>TERMÍN ONLINE</h2>
+
+<div class="section-script">
+Rezervujte si svůj
+</div>
+
+<h2>
+TERMÍN ONLINE
+</h2>
+
 <p>
 Vyberte si službu a termín,
 který vám vyhovuje.
+Těším se na vaši návštěvu!
 </p>
-<a href="#kontakt" class="btn">OBJEDNAT TERMÍN</a>
+
+<a href="#kontakt" class="main-btn">
+OBJEDNAT TERMÍN
+</a>
+
 </div>
 
 <div class="booking-image">
+
 <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=1200&auto=format&fit=crop">
+
 </div>
 
 <div class="booking-box" id="kontakt">
-<div class="contact-title">KONTAKT</div>
-<div class="contact-item">📞</div>
-<div class="contact-item">✉️</div>
-<div class="contact-item">📍</div>
-<div class="contact-item">📷</div>
-<div class="contact-item">👍</div>
+
+<div class="contact-title">
+KONTAKT
+</div>
+
+<div class="contact-item">
+📞 Telefon
+</div>
+
+<div class="contact-item">
+✉️ E-mail
+</div>
+
+<div class="contact-item">
+📍 Adresa
+</div>
+
+<div class="contact-item">
+📷 Instagram
+</div>
+
+<div class="contact-item">
+👍 Facebook
+</div>
+
 </div>
 
 </div>
@@ -512,39 +675,14 @@ který vám vyhovuje.
 </section>
 
 <footer>
+
+<div class="footer-logo">
+<img src="logo.png" alt="Logo">
+</div>
+
 © 2026 Pedikúra Erika Svobodová. Všechna práva vyhrazena.
+
 </footer>
 
 </body>
 </html>
-```
-
----
-
-## Přidání loga
-
-1. V GitHub repository klikni na `Add file` → `Upload files`
-2. Nahraj tvoje logo
-3. Přejmenuj ho na:
-
-```text
-logo.png
-```
-
-4. Klikni na `Commit changes`
-
-Logo se automaticky zobrazí nahoře na webu.
-
----
-
-POZNÁMKA:
-
-Až budeš chtít:
-
-* skutečné logo,
-* vlastní fotky,
-* online kalendář,
-* formulář,
-* nebo vlastní doménu,
-
-můžeme web dále profesionálně rozšířit.
