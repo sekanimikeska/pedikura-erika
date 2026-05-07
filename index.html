@@ -1,20 +1,3 @@
-# Luxusní web – Pedikúra Erika Svobodová
-
-Níže máš kompletní profesionální HTML kód webu inspirovaný návrhem.
-
-## Postup vložení do GitHubu
-
-1. Otevři soubor `index.html`
-2. Klikni na tužku ✏️
-3. Označ vše (`CTRL+A`)
-4. Smaž
-5. Vlož celý tento nový kód
-6. Dole klikni na `Commit changes`
-7. Počkej cca 1 minutu a obnov web
-
----
-
-```html
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -49,11 +32,11 @@ width:100%;
 top:0;
 left:0;
 z-index:1000;
-padding:20px 8%;
+padding:18px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(255,255,255,0.92);
+background:rgba(255,255,255,0.94);
 backdrop-filter:blur(10px);
 box-shadow:0 2px 20px rgba(0,0,0,0.04);
 }
@@ -61,16 +44,18 @@ box-shadow:0 2px 20px rgba(0,0,0,0.04);
 .logo{
 display:flex;
 align-items:center;
-gap:15px;
+gap:18px;
 }
 
 .logo img{
-height:70px;
+height:90px;
+width:auto;
+object-fit:contain;
 }
 
 .logo-text{
 font-family:'Cormorant Garamond',serif;
-font-size:28px;
+font-size:32px;
 font-weight:600;
 color:#2d2d2d;
 }
@@ -96,10 +81,10 @@ color:#d6949b;
 min-height:100vh;
 display:flex;
 align-items:center;
-padding:140px 10% 80px;
+padding:150px 10% 80px;
 background:
-linear-gradient(rgba(255,250,248,0.85),rgba(255,250,248,0.85)),
-url('https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=1974&auto=format&fit=crop');
+linear-gradient(rgba(255,250,248,0.82),rgba(255,250,248,0.82)),
+url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1800&auto=format&fit=crop');
 background-size:cover;
 background-position:center;
 }
@@ -118,7 +103,7 @@ margin-bottom:10px;
 
 .hero h1{
 font-family:'Cormorant Garamond',serif;
-font-size:78px;
+font-size:82px;
 line-height:1;
 margin-bottom:30px;
 font-weight:600;
@@ -126,7 +111,7 @@ color:#2d2d2d;
 }
 
 .hero p{
-font-size:20px;
+font-size:21px;
 margin-bottom:40px;
 max-width:550px;
 }
@@ -243,8 +228,6 @@ background:#fceef0;
 border-radius:40px;
 padding:90px 50px;
 text-align:center;
-position:relative;
-overflow:hidden;
 }
 
 .booking h2{
@@ -381,6 +364,15 @@ font-size:18px;
 padding:90px 7%;
 }
 
+.logo{
+flex-direction:column;
+text-align:center;
+}
+
+.logo img{
+height:70px;
+}
+
 }
 
 </style>
@@ -391,10 +383,13 @@ padding:90px 7%;
 <header>
 
 <div class="logo">
-<img src="https://i.imgur.com/YOURLOGO.png" alt="Logo">
+
+<img src="logo.png" alt="Logo">
+
 <div class="logo-text">
 Pedikúra Erika Svobodová
 </div>
+
 </div>
 
 <nav>
@@ -623,18 +618,3 @@ Neděle – zavřeno
 
 </body>
 </html>
-```
-
----
-
-POZNÁMKA:
-
-Až budeš chtít:
-
-* skutečné logo,
-* vlastní fotky,
-* online kalendář,
-* formulář,
-* nebo vlastní doménu,
-
-můžeme web dále profesionálně rozšířit.
