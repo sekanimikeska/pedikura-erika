@@ -1,1 +1,285 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ceník | Pedikúra Erika Svobodová</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Montserrat',sans-serif;
+background:#fcf7f5;
+color:#444;
+}
+
+header{
+position:sticky;
+top:0;
+padding:16px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#f6dede;
+z-index:100;
+box-shadow:0 4px 20px rgba(0,0,0,.04);
+}
+
+.logo img{
+height:120px;
+}
+
+nav{
+display:flex;
+gap:25px;
+align-items:center;
+flex-wrap:wrap;
+}
+
+nav a{
+text-decoration:none;
+color:#444;
+font-size:13px;
+text-transform:uppercase;
+font-weight:600;
+}
+
+.hero{
+padding:80px 7% 40px;
+text-align:center;
+}
+
+.script{
+font-family:'Parisienne',cursive;
+font-size:58px;
+color:#df8f99;
+}
+
+h1{
+font-family:'Cormorant Garamond',serif;
+font-size:70px;
+font-weight:500;
+}
+
+.wrap{
+max-width:1200px;
+margin:auto;
+padding:0 7% 100px;
+}
+
+.card{
+background:white;
+border-radius:30px;
+padding:40px;
+margin-bottom:35px;
+box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.card h2{
+font-family:'Cormorant Garamond',serif;
+font-size:42px;
+margin-bottom:20px;
+color:#d57c87;
+}
+
+.price{
+float:right;
+font-weight:700;
+color:#d57c87;
+}
+
+ul{
+margin-top:15px;
+padding-left:25px;
+line-height:2;
+}
+
+.line{
+display:flex;
+justify-content:space-between;
+padding:14px 0;
+border-bottom:1px solid #f1e6e6;
+}
+
+footer{
+padding:35px;
+background:#f6dede;
+text-align:center;
+font-size:13px;
+}
+
+@media(max-width:700px){
+
+header{
+flex-direction:column;
+gap:20px;
+}
+
+.logo img{
+height:90px;
+}
+
+h1{
+font-size:48px;
+}
+
+.card{
+padding:25px;
+}
+
+.line{
+flex-direction:column;
+gap:6px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<img src="logo.png">
+</div>
+
+<nav>
+<a href="index.html">Úvod</a>
+<a href="cenik.html">Ceník</a>
+<a href="#">Služby</a>
+<a href="#">Galerie</a>
+<a href="#">Objednání</a>
+<a href="#">Kontakt</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="script">
+Kompletní
+</div>
+
+<h1>CENÍK</h1>
+
+</section>
+
+<div class="wrap">
+
+<div class="card">
+
+<h2>
+Mobilní pedikúra
+<span class="price">550 Kč</span>
+</h2>
+
+</div>
+
+
+<div class="card">
+
+<h2>
+Mokrá pedikúra
+<span class="price">450 Kč</span>
+</h2>
+
+<ul>
+<li>ošetření zrohovatělé kůže pomocí skalpelu</li>
+<li>úprava nehtů</li>
+<li>dobroušení elektrickou bruskou</li>
+<li>peeling</li>
+<li>aplikace hydratačního krému</li>
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h2>
+Wellness pedikúra bez parafínu
+<span class="price">700 Kč</span>
+</h2>
+
+<ul>
+<li>ošetření zrohovatělé kůže pomocí skalpelu</li>
+<li>úprava nehtů</li>
+<li>peeling</li>
+<li>aplikace vyživující masky na nohy se zábalem</li>
+<li>krátká masáž chodidel</li>
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h2>
+Wellness pedikúra deluxe
+<span class="price">1000 Kč</span>
+</h2>
+
+<ul>
+<li>ošetření zrohovatělé kůže pomocí skalpelu</li>
+<li>úprava nehtů</li>
+<li>peeling</li>
+<li>aplikace vyživující masky na nohy se zábalem</li>
+<li>parafínový zábal</li>
+<li>relaxační masáž chodidel, lýtek a oblasti po kolena</li>
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h2>Doplňkové služby</h2>
+
+<div class="line"><span>Úprava nehtů</span><strong>200 Kč</strong></div>
+<div class="line"><span>Klasický lak</span><strong>150 Kč</strong></div>
+<div class="line"><span>Gel lak</span><strong>300 Kč</strong></div>
+<div class="line"><span>Odstranění gel laku</span><strong>100 Kč</strong></div>
+<div class="line"><span>Odlakování klasického laku</span><strong>60 Kč</strong></div>
+<div class="line"><span>Parafínový zábal</span><strong>150 Kč</strong></div>
+<div class="line"><span>Odstranění kuřího oka</span><strong>50–150 Kč</strong></div>
+
+</div>
+
+
+<div class="card">
+
+<h2>Depilace voskem</h2>
+
+<div class="line"><span>Lýtka</span><strong>300 Kč</strong></div>
+<div class="line"><span>Stehna</span><strong>390 Kč</strong></div>
+<div class="line"><span>Celé nohy</span><strong>650 Kč</strong></div>
+
+<br>
+
+<p><b>Zklidňující péče po depilaci v ceně.</b></p>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 Pedikúra Erika Svobodová
+
+</footer>
+
+</body>
+</html>
