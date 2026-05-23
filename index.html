@@ -20,7 +20,7 @@ scroll-behavior:smooth;
 
 body{
 font-family:'Montserrat',sans-serif;
-background:#ffffff;
+background:#fff;
 color:#444;
 overflow-x:hidden;
 }
@@ -36,13 +36,11 @@ justify-content:space-between;
 align-items:center;
 background:#f6dede;
 z-index:1000;
-box-shadow:0 4px 20px rgba(0,0,0,0.05);
+box-shadow:0 4px 20px rgba(0,0,0,.05);
 }
 
 .logo img{
 height:150px;
-width:auto;
-display:block;
 }
 
 nav{
@@ -59,7 +57,6 @@ text-transform:uppercase;
 letter-spacing:1px;
 color:#444;
 font-weight:600;
-transition:.3s;
 }
 
 nav a:hover{
@@ -101,7 +98,6 @@ font-family:'Cormorant Garamond',serif;
 font-size:90px;
 font-weight:500;
 line-height:0.95;
-color:#2d2d2d;
 margin-top:10px;
 }
 
@@ -128,7 +124,6 @@ color:#df8f99;
 font-size:23px;
 line-height:1.8;
 margin-bottom:40px;
-color:#666;
 max-width:500px;
 }
 
@@ -154,18 +149,12 @@ grid-template-columns:repeat(4,1fr);
 padding:45px 7%;
 gap:25px;
 text-align:center;
-background:white;
 }
 
 .feature h3{
 font-family:'Cormorant Garamond',serif;
 font-size:32px;
 color:#d57c87;
-}
-
-.feature p{
-margin-top:10px;
-color:#666;
 }
 
 .contact{
@@ -201,6 +190,11 @@ padding:18px 0;
 border-bottom:1px solid #f1e4e4;
 font-size:17px;
 color:#666;
+}
+
+.contact-item a{
+color:#d57c87;
+text-decoration:none;
 }
 
 footer{
@@ -275,10 +269,6 @@ grid-template-columns:1fr;
 padding:35px;
 }
 
-.contact-title{
-font-size:50px;
-}
-
 }
 
 </style>
@@ -293,6 +283,7 @@ font-size:50px;
 </div>
 
 <nav>
+
 <a href="index.html">Úvod</a>
 <a href="cenik.html">Ceník</a>
 <a href="#kontakt">Kontakt</a>
@@ -386,11 +377,7 @@ KONTAKT
 </div>
 
 <div class="contact-item">
-📷 Instagram — již brzy
-</div>
-
-<div class="contact-item">
-👍 Facebook — již brzy
+📷 <a href="https://www.instagram.com/espedikura" target="_blank">Instagram ESPedikura</a>
 </div>
 
 </div>
