@@ -27,23 +27,23 @@ color:#444;
 header{
 position:sticky;
 top:0;
-padding:16px 7%;
+padding:14px 7%;
 display:flex;
 justify-content:space-between;
 align-items:center;
 background:#f6dede;
-z-index:100;
+z-index:1000;
 box-shadow:0 4px 20px rgba(0,0,0,.04);
 }
 
 .logo img{
-height:120px;
+height:150px;
 }
 
 nav{
 display:flex;
-gap:25px;
 align-items:center;
+gap:30px;
 flex-wrap:wrap;
 }
 
@@ -53,22 +53,27 @@ color:#444;
 font-size:13px;
 text-transform:uppercase;
 font-weight:600;
+letter-spacing:1px;
+}
+
+nav a:hover{
+color:#d57c87;
 }
 
 .hero{
-padding:80px 7% 40px;
+padding:80px 7% 50px;
 text-align:center;
 }
 
 .script{
 font-family:'Parisienne',cursive;
-font-size:58px;
+font-size:60px;
 color:#df8f99;
 }
 
 h1{
 font-family:'Cormorant Garamond',serif;
-font-size:70px;
+font-size:72px;
 font-weight:500;
 }
 
@@ -117,6 +122,12 @@ padding:35px;
 background:#f6dede;
 text-align:center;
 font-size:13px;
+color:#666;
+}
+
+.footer-logo img{
+height:90px;
+margin-bottom:15px;
 }
 
 @media(max-width:700px){
@@ -127,11 +138,11 @@ gap:20px;
 }
 
 .logo img{
-height:90px;
+height:100px;
 }
 
 h1{
-font-size:48px;
+font-size:50px;
 }
 
 .card{
@@ -157,12 +168,13 @@ gap:6px;
 </div>
 
 <nav>
+
 <a href="index.html">Úvod</a>
-<a href="cenik.html">Ceník</a>
-<a href="#">Služby</a>
-<a href="#">Galerie</a>
-<a href="#">Objednání</a>
-<a href="#">Kontakt</a>
+
+<a href="index.html#kontakt">
+Kontakt
+</a>
+
 </nav>
 
 </header>
@@ -173,7 +185,9 @@ gap:6px;
 Kompletní
 </div>
 
-<h1>CENÍK</h1>
+<h1>
+CENÍK
+</h1>
 
 </section>
 
@@ -183,7 +197,9 @@ Kompletní
 
 <h2>
 Mobilní pedikúra
-<span class="price">550 Kč</span>
+<span class="price">
+550 Kč
+</span>
 </h2>
 
 </div>
@@ -193,7 +209,9 @@ Mobilní pedikúra
 
 <h2>
 Mokrá pedikúra
-<span class="price">450 Kč</span>
+<span class="price">
+450 Kč
+</span>
 </h2>
 
 <ul>
@@ -211,7 +229,9 @@ Mokrá pedikúra
 
 <h2>
 Wellness pedikúra bez parafínu
-<span class="price">700 Kč</span>
+<span class="price">
+700 Kč
+</span>
 </h2>
 
 <ul>
@@ -229,7 +249,9 @@ Wellness pedikúra bez parafínu
 
 <h2>
 Wellness pedikúra deluxe
-<span class="price">1000 Kč</span>
+<span class="price">
+1000 Kč
+</span>
 </h2>
 
 <ul>
@@ -276,6 +298,10 @@ Wellness pedikúra deluxe
 </div>
 
 <footer>
+
+<div class="footer-logo">
+<img src="logo.png" alt="Logo">
+</div>
 
 © 2026 Pedikúra Erika Svobodová
 
